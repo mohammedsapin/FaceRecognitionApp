@@ -19,11 +19,25 @@ const app = new Clarifai.App({
 const particlesOptions = {
   particles: {
     number: {
-      value: 200,
+      value: 80,
       density: {
         enable: true,
         value_area: 800
       }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      }
+    },
+
+    repulse: {
+      distance: 100,
+      duration: 0.1
     }
   }
 };
